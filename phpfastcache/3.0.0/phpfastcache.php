@@ -166,9 +166,9 @@ class phpFastCache {
                 $securityKey = isset($_SERVER['HTTP_HOST']) ? preg_replace('/^www./','',strtolower($_SERVER['HTTP_HOST'])) : "default";
             }
         }
-        if($securityKey != "") {
+        /*if($securityKey != "") {
             $securityKey.= "/";
-        }
+        }*/
         
         $securityKey = self::cleanFileName($securityKey);
 
